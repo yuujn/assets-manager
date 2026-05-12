@@ -50,6 +50,12 @@ public class App {
             System.out.printf("Acquisition Date: %s%n", asset.getDateAcquired());
             System.out.printf("Original Cost:    %s%n", asset.getOriginalCost());
             System.out.printf("Value:            %s%n", asset.getValue());
+            if (asset instanceof House house) {
+                System.out.printf("Address:          %s%n", house.getAddress());
+            } else if (asset instanceof Vehicle vehicle) {
+                System.out.printf("Year:             %d%n", vehicle.getYear());
+                System.out.printf("Make & Model:     %s%n", vehicle.getMakeModel());
+            }
         }
     }
 }
