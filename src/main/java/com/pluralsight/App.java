@@ -48,8 +48,8 @@ public class App {
             isFirst = false;
             System.out.printf("Description:      %s%n", asset.getDescription());
             System.out.printf("Acquisition Date: %s%n", asset.getDateAcquired());
-            System.out.printf("Original Cost:    %s%n", asset.getOriginalCost());
-            System.out.printf("Value:            %s%n", asset.getValue());
+            System.out.printf("Original Cost:    $%.2f%n", asset.getOriginalCost());
+            System.out.printf("Value:            $%.2f%n", asset.getValue());
             if (asset instanceof House house) {
                 System.out.printf("Address:          %s%n", house.getAddress());
             } else if (asset instanceof Vehicle vehicle) {
