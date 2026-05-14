@@ -40,6 +40,11 @@ public class App {
                 2016,
                 10000
         ));
+        assets.add(new Cash(
+                "Money under my mattress",
+                "April 20th, 2020",
+                4000.
+        ));
 
         boolean isFirst = true;
         for (Asset asset : assets) {
